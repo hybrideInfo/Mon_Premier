@@ -1,0 +1,22 @@
+﻿@Écho off
+title Activez Windows 10 (TOUTES les versions) GRATUITEMENT - MSGuides.com&cls&echo ==================================== ================================================&écho #Projet : Activation GRATUITE des produits logiciels Microsoft sans logiciel supplémentaire&echo ====================================== ==============================================&écho.&écho #Produits pris en charge :&echo - Windows 10 Famille&echo - Windows 10 Professionnel&echo - Windows 10 Éducation&echo - Windows 10 Entreprise&echo.&echo.&echo ========================= ================================================= =&echo Activation de Windows...&cscript //nologo slmgr.vbs /ckms >nul&cscript //nologo slmgr.vbs /upk >nul&cscript //nologo slmgr.vbs /cpky >nul&set i=1&wmic os | findstr /I "
+if %errorlevel% EQU 0 (cscript //nologo slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43 >nul||cscript //nologo slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4 >nul| |cscript //nologo slmgr.vbs /ipk YYVX9-NTFWV-6MDM3-9PT4T-4M68B >nul||cscript //nologo slmgr.vbs /ipk 44RPN-FTY23-9VTTB-MP9BX-T84FV >nul||cscript //nologo slmgr .vbs /ipk WNMTR-4C88C-JK8YV-HQ7T2-76DF9 >nul||cscript //nologo slmgr.vbs /ipk 2F77B-TNFGY-69QQF-B8YKP-D69TJ >nul||cscript //nologo slmgr.vbs /ipk DCPHK- NFMTC-H88MJ-PFHPY-QJ4BJ >nul||cscript //nologo slmgr.vbs /ipk QFFDN-GRT3P-VKWWX-X7T3R-8B639 >nul||cscript //nologo slmgr.vbs /ipk M7XTQ-FN8P6-TTKYV-9D4CC- J462D >nul||cscript //nologo slmgr.vbs /ipk 92NFX-8DJQP-P6BBQ-THF9C-7CG2H >nul&goto skms) else wmic os | findstr /I "home" >nul
+if %errorlevel% EQU 0 (cscript //nologo slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul||cscript //nologo slmgr.vbs /ipk 3KHY7-WNT83-DGQKR-F7HPR-844BM >nul| |cscript //nologo slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH >nul||cscript //nologo slmgr.vbs /ipk PVMJN-6DFY6-9CCP6-7BKTT-D3WVR >nul&goto skms) else wmic os | findstr /I "éducation" >nul
+if %errorlevel% EQU 0 (cscript //nologo slmgr.vbs /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2 >nul||cscript //nologo slmgr.vbs /ipk 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ >nul&goto skms ) sinon os wmic | findstr /I "10 pro" >nul
+if %errorlevel% EQU 0 (cscript //nologo slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul||cscript //nologo slmgr.vbs /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul| |cscript //nologo slmgr.vbs /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J >nul||cscript //nologo slmgr.vbs /ipk 9FNHH-K3HBT-3W4TD-6383H-6XYWF >nul||cscript //nologo slmgr .vbs /ipk 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y >nul||cscript //nologo slmgr.vbs /ipk YVWGF-BXNMC-HTQYQ-CPQ99-66QFC >nul&goto skms) else (goto notsupported)
+:skms
+si %i% GTR 10 devient occupé
+si %i% EQU 1 définir KMS=kms7.MSGuides.com
+si %i% EQU 2 définir KMS=s8.uk.to
+si %i% EQU 3 set KMS=s9.us.to
+si %i% GTR 3 aller à
+cscript //nologo slmgr.vbs /skms %KMS%:1688 >nul
+:ato
+écho ================================================ ==========================&echo.&echo.&cscript //nologo slmgr.vbs /ato | trouver /i "avec succès" && (echo.&echo ======================================= ====================================&echo.&echo #Mon blog officiel : MSGuides.com&echo.&echo #Comment ça marche : bit.ly/kms-server&echo.&echo #N'hésitez pas à me contacter à msguides.com@gmail.com si vous avez des questions ou des préoccupations.&echo.&echo #Veuillez envisager de soutenir ce projet : donate.msguides .com&echo #Votre assistance m'aide à faire fonctionner mes serveurs 24h/24 et 7j/7 !&echo.&echo =============================== ============================================&choix /n /c YN /m "Voulez-vous visiter mon blog [Y,N]?" & si niveau d'erreur 2 sortie) || (echo La connexion à mon serveur KMS a échoué ! Tentative de connexion à un autre... & echo Veuillez patienter... & echo. & echo. & set /a i+=1 & goto skms)
+explorateur "http://MSGuides.com"&goto stop
+:non supporté
+écho ================================================ ==========================&echo.&echo Désolé, votre version n'est pas prise en charge.&echo.&goto halt
+:occupé
+écho ================================================ ==========================&echo.&echo Désolé, le serveur est occupé et ne peut pas répondre à votre demande. Veuillez réessayer.&écho.
+:arrêt
+pause > nul
